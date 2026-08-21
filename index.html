@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archana Tools Pvt. Ltd.</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #0b1f3a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+       nav a:hover {
+    color: #f5a623;
+}
+
+        .hero {
+            background: #12345a;
+            color: white;
+            padding: 90px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+        section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            cursor: pointer;
+        }
+        .card img {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+        .card h3 {
+            margin-bottom: 12px;
+        }
+        .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.card:hover img {
+    transform: scale(1.05);
+}
+
+        footer {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Archana Tools Pvt. Ltd.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Archana Tools Pvt. Ltd.</h1>
+    <p>Precision Cutting Tools & Industrial Machining Solutions</p>
+    
+    <a href="#products" class="btn">View Products</a>
+</section>
+<a href="https://wa.me/919595093214" class="btn" target="_blank">
+    Chat on WhatsApp
+</a>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        <p>
+    Archana Tools Pvt. Ltd. is a trusted supplier of precision cutting tools
+    and industrial machining solutions. We provide quality Turning Inserts,
+    Milling Inserts, Grooving Inserts and Cutting Tools for various
+    manufacturing and machining applications.
+</p>
+    </p>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+<div class="products">
+
+    <div class="card">
+        <img src="turning-inserts.jpg" alt="Turning Inserts">
+        <h3>Turning Inserts</h3>
+        <p>High-quality cutting inserts for precision turning operations.</p>
+    </div>
+
+    <div class="card">
+        <img src="milling-inserts.jpg" alt="Milling Inserts">
+        <h3>Milling Inserts</h3>
+        <p>Reliable milling solutions for industrial machining.</p>
+    </div>
+
+    <div class="card">
+        <img src="grooving-inserts.jpg" alt="Grooving Inserts">
+        <h3>Grooving Inserts</h3>
+        <p>Precision grooving tools for accurate machining applications.</p>
+    </div>
+
+    <div class="card">
+        <img src="cutting-tools.jpg" alt="Cutting Tools">
+        <h3>Cutting Tools</h3>
+        <p>Industrial cutting tools designed for performance and durability.</p>
+    </div>
+
+</div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Call / WhatsApp: 
+    <a href="tel:+919595093214">9595093214</a>
+</p>
+    <p>📍 Address: FII Block, MIDC Bhosari, Telco Bhosari Road, Pimpri Chinchwad, Pune 411018</p>
+    <a href="https://www.bing.com/ck/a?!&&p=e8e286e0a1ee24abf469ad16f004efc40802c95acf1ff8cc4717752fa123d1dcJmltdHM9MTc4NzI3MDQwMA&ptn=3&ver=2&hsh=4&fclid=0afabd6c-3f0c-6cbf-3c5a-aadd3efe6d8a&u=a1L21hcHM_Jm1lcGk9NTd-fkVtYmVkZGVkfkxhcmdlTWFwTGluayZ0eT0xOCZxPVRlbGNvJTIwUm9hZCUyQyUyMEJob3NhcmklMkMlMjBIYXZlbGklMkMlMjBNYWhhcmFzaHRyYS00MTEwMTglMkMlMjBJbmRpYSZwcG9pcz0xOC42NTA1NjAyMDAwMDQyXzczLjgwOTU5MjE1MDAwNjNfVGVsY28lMjBSb2FkJTJDJTIwQmhvc2FyaSUyQyUyMEhhdmVsaSUyQyUyME1haGFyYXNodHJhLTQxMTAxOCUyQyUyMEluZGlhX34mY3A9MTguNjUwNTZ-NzMuODA5NTkyJnY9MiZzVj0xJkZPUk09TUlSRSZxcHZ0PUZJSStCbG9jayUyYytNSURDK0Job3NhcmklMmMrVGVsY28rQmhvc2FyaStSb2FkJTJjK1BpbXByaStDaGluY2h3YWQlMmMrUHVuZSs0MTEwMTg" class="btn" target="_blank">
+    📍 View Location
+</a>
+    <p>For product enquiries and industrial solutions, contact Archana Tools Pvt. Ltd.</p>
+    <br>
+    <a href="#enquiry" class="btn">Send Enquiry</a>
+<a href="https://wa.me/919595093214" class="btn" target="_blank">
+    Chat on WhatsApp
+</a>
+<div id="enquiry" style="margin-top:40px;">
+
+    <h2>Send Enquiry</h2>
+
+    <form onsubmit="sendWhatsApp(); return false;" style="max-width:500px; margin:auto;">
+        
+        <input type="text" id="name" placeholder="Your Name" required
+        style="width:100%; padding:14px; margin:8px 0; border:1px solid #ccc; border-radius:6px;">
+
+        <input type="tel" id="mobile" placeholder="Mobile Number" required
+        style="width:100%; padding:14px; margin:8px 0; border:1px solid #ccc; border-radius:6px;">
+
+        <select id="product" required
+        style="width:100%; padding:14px; margin:8px 0; border:1px solid #ccc; border-radius:6px;">
+
+            <option value="">Select Product</option>
+            <option>Turning Inserts</option>
+            <option>Milling Inserts</option>
+            <option>Grooving Inserts</option>
+            <option>Cutting Tools</option>
+
+        </select>
+
+        <textarea id="message" placeholder="Your Enquiry" required
+        style="width:100%; padding:14px; margin:8px 0; height:120px; border:1px solid #ccc; border-radius:6px;"></textarea>
+
+        <button type="submit" class="btn" style="border:none; cursor:pointer;">
+            Send on WhatsApp
+        </button>
+
+    </form>
+
+</div>
+</section>
+
+<footer>
+    <p>© 2026 Archana Tools Pvt. Ltd. All Rights Reserved.</p>
+</footer>
+
+<script>
+function sendWhatsApp() {
+
+    var name = document.getElementById("name").value;
+    var mobile = document.getElementById("mobile").value;
+    var product = document.getElementById("product").value;
+    var message = document.getElementById("message").value;
+
+    var text = "New Product Enquiry\n\n" +
+               "Name: " + name + "\n" +
+               "Mobile: " + mobile + "\n" +
+               "Product: " + product + "\n" +
+               "Enquiry: " + message;
+
+    var url = "https://wa.me/919595093214?text=" + encodeURIComponent(text);
+
+    window.open(url, "_blank");
+}
+</script>
+</body>
+</html>
