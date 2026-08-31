@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archana Tools Pvt. Ltd.</title>
+
+    <title>Archana Tools Pvt. Ltd. | CNC Cutting Tools & Inserts</title>
+
+    <meta name="description"
+        content="Archana Tools Pvt. Ltd. is a supplier of CNC cutting tools, Turning Inserts, Milling Inserts, Grooving Inserts and industrial machining solutions in Pune, Maharashtra.">
+
+    <meta name="keywords"
+        content="Archana Tools, CNC Inserts, Turning Inserts, Milling Inserts, Grooving Inserts, Cutting Tools, CNC Cutting Tools, Industrial Machining Tools, Pune">
+
+    <meta name="robots" content="index, follow">
 
     <style>
         * {
@@ -13,34 +23,47 @@
             font-family: Arial, sans-serif;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background: #f5f7fa;
             color: #222;
+            line-height: 1.6;
         }
 
         header {
             background: #0b1f3a;
             color: white;
-            padding: 20px 8%;
+            padding: 18px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo img {
-    width: 180px;
-    height: auto;
-    display: block;
-}
+            width: 180px;
+            height: auto;
+            display: block;
+        }
 
-       nav a:hover {
-    color: #f5a623;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f5a623;
+        }
 
         .hero {
-            background: #12345a;
+            background: linear-gradient(135deg, #12345a, #0b1f3a);
             color: white;
-            padding: 90px 8%;
+            padding: 100px 8%;
             text-align: center;
         }
 
@@ -51,22 +74,41 @@
 
         .hero p {
             font-size: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f5a623;
+            color: #111;
+            padding: 12px 22px;
+            margin: 8px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
         }
 
         .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
 
         section {
-            padding: 60px 8%;
+            padding: 70px 8%;
             text-align: center;
         }
 
         section h2 {
             font-size: 32px;
             margin-bottom: 20px;
+            color: #0b1f3a;
+        }
+
+        .about-text {
+            max-width: 850px;
+            margin: auto;
+            font-size: 17px;
         }
 
         .products {
@@ -80,33 +122,68 @@
         .card {
             background: white;
             width: 250px;
-            padding: 30px 20px;
+            padding: 25px 20px;
             border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
         .card img {
-    width: 100%;
-    height: 170px;
-    object-fit: contain;
-    margin-bottom: 20px;
-    border-radius: 6px;
-}
+            width: 100%;
+            height: 170px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
 
         .card h3 {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            color: #0b1f3a;
         }
-        .card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-.card:hover img {
-    transform: scale(1.05);
-}
+        #contact p {
+            margin: 12px 0;
+        }
+
+        #contact a:not(.btn) {
+            color: #0b1f3a;
+            font-weight: bold;
+        }
+
+        #enquiry {
+            max-width: 650px;
+            margin: 40px auto 0;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        form input,
+        form select,
+        form textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        form textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        form button {
+            border: none;
+            cursor: pointer;
+        }
 
         footer {
             background: #0b1f3a;
@@ -114,36 +191,52 @@
             text-align: center;
             padding: 25px;
         }
+
         @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 15px;
-    }
 
-    nav a {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+            header {
+                flex-direction: column;
+                gap: 18px;
+                text-align: center;
+            }
 
-    .hero h1 {
-        font-size: 34px;
-    }
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
 
-    .hero p {
-        font-size: 18px;
-    }
+            .hero {
+                padding: 70px 5%;
+            }
 
-    .card {
-        width: 100%;
-        max-width: 320px;
-    }
-}
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            section {
+                padding: 50px 5%;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 320px;
+            }
+
+            #enquiry {
+                padding: 25px 18px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
 <header>
+
     <div class="logo">
         <img src="image.png" alt="Archana Tools Pvt. Ltd.">
     </div>
@@ -154,133 +247,271 @@
         <a href="#products">Products</a>
         <a href="#contact">Contact</a>
     </nav>
+
 </header>
 
+
 <section class="hero" id="home">
+
     <h1>Archana Tools Pvt. Ltd.</h1>
-   <p>Wholesale CNC Inserts, Cutting Tools & Industrial Machining Solutions in Pune</p>
-    
-    <a href="#products" class="btn">View Products</a>
+
+    <p>
+        Wholesale CNC Inserts, Cutting Tools & Industrial Machining Solutions in Pune
+    </p>
+
+    <a href="#products" class="btn">
+        View Products
+    </a>
+
+    <a href="https://wa.me/919595093214"
+       class="btn"
+       target="_blank"
+       rel="noopener">
+        Chat on WhatsApp
+    </a>
+
 </section>
-<a href="https://wa.me/919595093214" class="btn" target="_blank">
-    Chat on WhatsApp
-</a>
+
 
 <section id="about">
+
     <h2>About Us</h2>
-    <p>
-        <p>
-    Archana Tools Pvt. Ltd. is a trusted supplier of CNC cutting tools and
-    industrial machining solutions in Pune, Maharashtra. We specialize in
-    Turning Inserts, Milling Inserts, Grooving Inserts and Cutting Tools for
-    CNC machining and manufacturing applications.
-</p>
+
+    <p class="about-text">
+        Archana Tools Pvt. Ltd. is a trusted supplier of CNC cutting tools
+        and industrial machining solutions in Pune, Maharashtra. We specialize
+        in Turning Inserts, Milling Inserts, Grooving Inserts and Cutting Tools
+        for CNC machining and manufacturing applications.
     </p>
+
 </section>
+
 
 <section id="products">
+
     <h2>Our Products</h2>
-<div class="products">
 
-    <div class="card">
-        <img src="turning-inserts.jpg" alt="Turning Inserts">
-        <h3>Turning Inserts</h3>
-        <p>High-quality cutting inserts for precision turning operations.</p>
+    <div class="products">
+
+        <div class="card">
+
+            <img src="turning-inserts.jpg"
+                 alt="Turning Inserts">
+
+            <h3>Turning Inserts</h3>
+
+            <p>
+                High-quality cutting inserts for precision turning operations.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="milling-inserts.jpg"
+                 alt="Milling Inserts">
+
+            <h3>Milling Inserts</h3>
+
+            <p>
+                Reliable milling solutions for industrial machining.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="grooving-inserts.jpg"
+                 alt="Grooving Inserts">
+
+            <h3>Grooving Inserts</h3>
+
+            <p>
+                Precision grooving tools for accurate machining applications.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="cutting-tools.jpg"
+                 alt="Industrial Cutting Tools">
+
+            <h3>Cutting Tools</h3>
+
+            <p>
+                Industrial cutting tools designed for performance and durability.
+            </p>
+
+        </div>
+
     </div>
 
-    <div class="card">
-        <img src="milling-inserts.jpg" alt="Milling Inserts">
-        <h3>Milling Inserts</h3>
-        <p>Reliable milling solutions for industrial machining.</p>
-    </div>
-
-    <div class="card">
-        <img src="grooving-inserts.jpg" alt="Grooving Inserts">
-        <h3>Grooving Inserts</h3>
-        <p>Precision grooving tools for accurate machining applications.</p>
-    </div>
-
-    <div class="card">
-        <img src="cutting-tools.jpg" alt="Cutting Tools">
-        <h3>Cutting Tools</h3>
-        <p>Industrial cutting tools designed for performance and durability.</p>
-    </div>
-
-</div>
 </section>
+
 
 <section id="contact">
+
     <h2>Contact Us</h2>
-    <p>📞 Call / WhatsApp: 
-    <a href="tel:+919595093214">9595093214</a>
-</p>
-    <p>📍 Address: FII Block, MIDC Bhosari, Telco Bhosari Road, Pimpri Chinchwad, Pune 411018</p>
-    <a href="https://www.bing.com/ck/a?!&&p=e8e286e0a1ee24abf469ad16f004efc40802c95acf1ff8cc4717752fa123d1dcJmltdHM9MTc4NzI3MDQwMA&ptn=3&ver=2&hsh=4&fclid=0afabd6c-3f0c-6cbf-3c5a-aadd3efe6d8a&u=a1L21hcHM_Jm1lcGk9NTd-fkVtYmVkZGVkfkxhcmdlTWFwTGluayZ0eT0xOCZxPVRlbGNvJTIwUm9hZCUyQyUyMEJob3NhcmklMkMlMjBIYXZlbGklMkMlMjBNYWhhcmFzaHRyYS00MTEwMTglMkMlMjBJbmRpYSZwcG9pcz0xOC42NTA1NjAyMDAwMDQyXzczLjgwOTU5MjE1MDAwNjNfVGVsY28lMjBSb2FkJTJDJTIwQmhvc2FyaSUyQyUyMEhhdmVsaSUyQyUyME1haGFyYXNodHJhLTQxMTAxOCUyQyUyMEluZGlhX34mY3A9MTguNjUwNTZ-NzMuODA5NTkyJnY9MiZzVj0xJkZPUk09TUlSRSZxcHZ0PUZJSStCbG9jayUyYytNSURDK0Job3NhcmklMmMrVGVsY28rQmhvc2FyaStSb2FkJTJjK1BpbXByaStDaGluY2h3YWQlMmMrUHVuZSs0MTEwMTg" class="btn" target="_blank">
-    📍 View Location
-</a>
-    <p>For product enquiries and industrial solutions, contact Archana Tools Pvt. Ltd.</p>
-    <br>
-    <a href="#enquiry" class="btn">Send Enquiry</a>
-<a href="https://wa.me/919595093214" class="btn" target="_blank">
-    Chat on WhatsApp
-</a>
-<div id="enquiry" style="margin-top:40px;">
 
-    <h2>Send Enquiry</h2>
+    <p>
+        📞 Call / WhatsApp:
+        <a href="tel:+919595093214">
+            9595093214
+        </a>
+    </p>
 
-    <form onsubmit="sendWhatsApp(); return false;" style="max-width:500px; margin:auto;">
-        
-        <input type="text" id="name" placeholder="Your Name" required
-        style="width:100%; padding:14px; margin:8px 0; border:1px solid #ccc; border-radius:6px;">
 
-        <input type="tel" id="mobile" placeholder="Mobile Number" required
-        style="width:100%; padding:14px; margin:8px 0; border:1px solid #ccc; border-radius:6px;">
+    <p>
+        📧 Email:
+        <a href="mailto:archanatoolspvt@gmail.com">
+            archanatoolspvt@gmail.com
+        </a>
+    </p>
 
-        <select id="product" required
-        style="width:100%; padding:14px; margin:8px 0; border:1px solid #ccc; border-radius:6px;">
 
-            <option value="">Select Product</option>
-            <option>Turning Inserts</option>
-            <option>Milling Inserts</option>
-            <option>Grooving Inserts</option>
-            <option>Cutting Tools</option>
+    <p>
+        📍 Address:
+        FII Block, MIDC Bhosari, Telco Bhosari Road,
+        Pimpri Chinchwad, Pune 411018
+    </p>
 
-        </select>
 
-        <textarea id="message" placeholder="Your Enquiry" required
-        style="width:100%; padding:14px; margin:8px 0; height:120px; border:1px solid #ccc; border-radius:6px;"></textarea>
+    <a href="https://www.google.com/maps/search/?api=1&query=Archana+Tools+Pvt+Ltd+Pimpri+Chinchwad+Pune+411018"
+       class="btn"
+       target="_blank"
+       rel="noopener">
+        📍 View Location
+    </a>
 
-        <button type="submit" class="btn" style="border:none; cursor:pointer;">
-            Send on WhatsApp
-        </button>
 
-    </form>
+    <p>
+        For product enquiries and industrial solutions,
+        contact Archana Tools Pvt. Ltd.
+    </p>
 
-</div>
+
+    <a href="#enquiry" class="btn">
+        📝 Send Enquiry
+    </a>
+
+
+    <a href="https://wa.me/919595093214"
+       class="btn"
+       target="_blank"
+       rel="noopener">
+        💬 Chat on WhatsApp
+    </a>
+
+
+    <div id="enquiry">
+
+        <h2>Send Enquiry</h2>
+
+        <form onsubmit="sendWhatsApp(); return false;">
+
+            <input type="text"
+                   id="name"
+                   placeholder="Your Name"
+                   required>
+
+            <input type="tel"
+                   id="mobile"
+                   placeholder="Mobile Number"
+                   required>
+
+            <select id="product" required>
+
+                <option value="">
+                    Select Product
+                </option>
+
+                <option>
+                    Turning Inserts
+                </option>
+
+                <option>
+                    Milling Inserts
+                </option>
+
+                <option>
+                    Grooving Inserts
+                </option>
+
+                <option>
+                    Cutting Tools
+                </option>
+
+            </select>
+
+
+            <textarea id="message"
+                      placeholder="Your Enquiry"
+                      required></textarea>
+
+
+            <button type="submit" class="btn">
+                Send Enquiry on WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
 </section>
 
+
 <footer>
-    <p>© 2026 Archana Tools Pvt. Ltd. All Rights Reserved.</p>
+
+    <p>
+        © 2026 Archana Tools Pvt. Ltd. All Rights Reserved.
+    </p>
+
+    <p>
+        CNC Cutting Tools | Inserts | Industrial Machining Solutions
+    </p>
+
 </footer>
 
+
 <script>
+
 function sendWhatsApp() {
 
-    var name = document.getElementById("name").value;
-    var mobile = document.getElementById("mobile").value;
-    var product = document.getElementById("product").value;
-    var message = document.getElementById("message").value;
+    var name =
+        document.getElementById("name").value;
 
-    var text = "New Product Enquiry\n\n" +
-               "Name: " + name + "\n" +
-               "Mobile: " + mobile + "\n" +
-               "Product: " + product + "\n" +
-               "Enquiry: " + message;
+    var mobile =
+        document.getElementById("mobile").value;
 
-    var url = "https://wa.me/919595093214?text=" + encodeURIComponent(text);
+    var product =
+        document.getElementById("product").value;
+
+    var message =
+        document.getElementById("message").value;
+
+
+    var text =
+        "New Product Enquiry\n\n" +
+        "Name: " + name + "\n" +
+        "Mobile: " + mobile + "\n" +
+        "Product: " + product + "\n" +
+        "Enquiry: " + message;
+
+
+    var url =
+        "https://wa.me/919595093214?text=" +
+        encodeURIComponent(text);
+
 
     window.open(url, "_blank");
+
 }
+
 </script>
+
 </body>
 </html>
