@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rautv959-droid.github.io/archana-tools-website/sitemap.xml
